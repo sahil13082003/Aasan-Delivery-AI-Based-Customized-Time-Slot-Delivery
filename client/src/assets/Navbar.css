@@ -1,0 +1,52 @@
+.custom-navbar {
+    background-color: #f0f0f5; /* Light gray background color */
+    padding: 1rem 1rem; /* Adjusts padding of the navbar */
+    font-family: 'Roboto', sans-serif; /* Professional font */
+    box-shadow: 0 6px 15px rgba(11, 10, 10, 0.1); /* Box shadow for depth effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.custom-navbar:hover {
+    box-shadow: 0 6px 15px rgba(6, 6, 6, 0.2); /* Darker shadow on hover */
+}
+
+.custom-nav-link {
+    color: #A0006D !important; /* Purple color for nav links */
+    font-size: 20px;
+    font-weight: bold; /* Make text bold */
+    position: relative; /* Required for the pseudo-element */
+    transition: color 0.3s; /* Smooth transition for color change */
+    padding: 1 2rem;
+    margin-right: 15px;
+}
+
+.custom-nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px; /* Adjust thickness */
+    background: #A0006D; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition for width */
+    position: absolute;
+    left: 50%; /* Center the line */
+    bottom: px; /* Positioning below the link text */
+    transform: translateX(-50%); /* Center the line */
+}
+
+.custom-nav-link:hover::after {
+    width: 40%; /* Full width on hover */
+}
+
+.custom-button {
+    border-color: #A0006D !important; /* Purple border for buttons */
+    color: #A0006D !important; /* Button text color */
+    font-size: 17px;
+    font-weight: bold; /* Make button text bold */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    margin-top: 8px;
+}
+
+.custom-button:hover {
+    background-color: #A0006D; /* Change button background color on hover */
+    color: white !important; /* Change button text color to white on hover */
+}
